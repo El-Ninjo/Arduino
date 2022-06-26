@@ -1,0 +1,15 @@
+int x;
+void setup()
+{
+  pinMode(9, OUTPUT);
+  Serial.begin(9600);
+  randomSeed(analogRead(A1));
+  x=random(1,4);
+  if (x==1) Serial.println("Schere");
+  if (x==2) Serial.println("Stein");
+  if (x==3) Serial.println("Papier");
+}
+
+void loop(){
+
+}
